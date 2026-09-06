@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="body">
-        <div class="display">
-            <input type="text" placeholder="0" id="dispaly" name="display" disabled/>
-        </div>
-        <div class="buttons">
-            <input type="button" value="AC" id="clear" name="clear">
-            <input type="button" value="REMOVE" id="erase" name="delete">
-            <input type="button" value="/" class="input-button" name="division">
-            <input type="button" value="*" class="input-button" name="multiplication">
-            <input type="button" value="7" class="input-button"name="number"/>
-            <input type="button" value="8" class="input-button"name="number" />
-            <input type="button" value="9" class="input-button"name="number"/>
-            <input type="button" value="-" class="input-button" name="subtraction"/>
-            <input type="button" value="4" class="input-button"name="number" />
-            <input type="button" value="5" class="input-button"name="number" />
-            <input type="button" value="6" class="input-button"name="number" />
-            <input type="button" value="+" class="input-button" name="Addition" />
-            <input type="button" value="1" class="input-button"name="number" />
-            <input type="button" value="2" class="input-button" name="number" />
-            <input type="button" value="3" class="input-button" name="number" />
-            <input type="button" value="=" id="equal" name="equal" />
-            <input type="button" value="0" class="input-button" name="zero" />
-            <input type="button" value="." class="input-button" name="decimal" />
-
-        </div>
-      
+    <main class="calculator-shell">
+        <section class="calculator" aria-label="Scientific calculator">
+            <header class="calculator-header">
+                <div><span class="brand-mark">CALC//01</span><h1>Scientific</h1></div>
+                <span class="status-light" aria-label="Calculator ready"></span>
+            </header>
+            <div class="display" aria-live="polite">
+                <div class="expression" id="expression">Ready</div>
+                <div class="result" id="dispaly">0</div>
+            </div>
+            <div class="mode-row">
+                <button class="mode-button active" data-action="angle">DEG</button>
+                <span class="mode-label">Angle mode</span><span class="memory-label" id="memory-indicator">M</span>
+            </div>
+            <div class="buttons">
+                <button class="function-button" data-value="sin(">sin</button><button class="function-button" data-value="cos(">cos</button><button class="function-button" data-value="tan(">tan</button><button class="function-button" data-value="log(">log</button>
+                <button class="function-button" data-value="ln(">ln</button><button class="function-button" data-value="sqrt(">√</button><button class="function-button" data-value="^2">x²</button><button class="function-button" data-value="^">xʸ</button>
+                <button class="utility-button" data-action="clear">AC</button><button class="utility-button" data-action="erase">⌫</button><button class="utility-button" data-action="memory-clear">MC</button><button class="utility-button" data-action="memory-recall">MR</button>
+                <button class="utility-button" data-action="memory-add">M+</button><button class="operator-button" data-value="(">(</button><button class="operator-button" data-value=")">)</button><button class="operator-button" data-value="/">÷</button>
+                <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="operator-button" data-value="*">×</button>
+                <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="operator-button" data-value="-">−</button>
+                <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button class="operator-button" data-value="+">+</button>
+                <button class="zero-button" data-value="0">0</button><button data-value=".">.</button><button class="equals-button" data-action="calculate">=</button>
+            </div>
+            <footer class="calculator-footer"><span>SHIFT</span><span>PRECISION 10</span><span>READY</span></footer>
+        </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
     
 </body>

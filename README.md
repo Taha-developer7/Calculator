@@ -1,2 +1,3 @@
-# Calculator
-A responsive web-based calculator built with HTML, CSS, and jQuery. Perform basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and interactive interface.
+# Scientific Calculator
+
+A responsive scientific calculator built with HTML, CSS, and vanilla JavaScript. It supports arithmetic, trigonometric functions, logarithms, square roots, powers, memory controls, DEG/RAD angle modes, and keyboard input.
